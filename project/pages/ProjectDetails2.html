@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Innovative Solutions LLP - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="company-name">Yash Innovative Solutions LLP</div>
+        </div>
+        <nav class="sidebar-menu">
+            <a href="/project/public/index.html" class="menu-item">
+                <i class="fa fa-home"></i>
+                Dashboard
+            </a>
+            <a href="/project/pages/Projects.html" class="menu-item active">
+                <i class="fas fa-project-diagram"></i>
+                Projects
+            </a>
+            <a href="/project/pages/Employee.html" class="menu-item">
+                <i class="fas fa-users"></i>
+                Employees
+            </a>
+            <a href="/project/pages/FinancialDashboard.html" class="menu-item">
+                <i class="fas fa-chart-bar"></i>
+                Financial Report
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-comments"></i>
+                Chat
+            </a>
+            <div class="add-project-container">
+                <div class="add-project-text">
+                    <p>Please organize your projects through button</p>
+                </div>
+                <button class="add-project-btn">
+                    <i class="fas fa-plus"></i>
+                    Add Project
+                </button>
+            </div>
+            
+            <a href="#" class="log-out">
+                Log Out
+                <i class="fas fa-power-off"></i>
+            </a>
+        </nav>
+        <div class="footer">
+            <p>&copy; 2023 All rights reserved.</p>
+            <p>Made By MHTECHIN</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search Here">
+            </div>
+            <div class="header-icons">
+                <div class="icon-badge">
+                    <i class="fas fa-bell blue-icon"></i>
+                </div>
+                <div class="icon-badge">
+                    <i class="fas fa-envelope green-icon"></i>
+                </div>
+                 
+                <div class="user-profile">
+                    <div class="greeting">Hello, ADMIN!</div>
+                    <div class="avatar">
+                        <a href="/project/pages/Login Page/index.html">
+                            <img src="/assets/images/admin.png" alt="User Avatar">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- Project Content -->
+    <div class="project-content">
+        <div class="welcome-text">
+            <h1>PROJECT DETAILS 2</h1>
+            <p>Hi, ADMIN. Welcome back to Yash Admin!</p>
+        </div>
+        <div class="dashboard">
+            <div class="header1">
+                <input type="text" placeholder="Project Name" class="project-name">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+    
+            <div class="container">
+                <div class="progress-section">
+                  <h2>Progress</h2>
+                  <br>
+                  <div class="progress-bar">
+                    <div class="segment orange"></div>
+                    <div class="segment green"></div>
+                    <div class="segment red"></div>
+                  </div>
+                </div>
+              
+
+                <div class="profit-loss-card">
+                    <div class="content">
+                        <div class="icon4">
+                            <svg width="40" height="40" viewBox="0 0 40 40">
+                                <path class="graph-line" d="M5 30 L15 20 L25 25 L35 10" fill="none" stroke="#ff0000" stroke-width="2"/>
+                                <path class="graph-line" d="M5 25 L15 15 L25 20 L35 5" fill="none" stroke="#00ff00" stroke-width="2"/>
+                                <line x1="5" y1="35" x2="5" y2="5" stroke="#0088ff" stroke-width="2"/>
+                                <line x1="5" y1="35" x2="35" y2="35" stroke="#0088ff" stroke-width="2"/>
+                                <circle cx="32" cy="12" r="8" fill="#ffdd00"/>
+                                <text x="28" y="16" font-size="12" fill="#000">$</text>
+                            </svg>
+                        </div>
+                        <div class="text-content">
+                            <h2>Profit/Loss</h2>
+                            <p class="helper-text4">Helper Text</p>
+                            <p class="details">Details--</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="cards-container">
+                <div class="card1">
+                    <i class="fas fa-users"></i>
+                    <div class="card-content">
+                        <h4>Employees Assigned</h4>
+                        <p>20</p>
+                    </div>
+                </div>
+    
+                <div class="card1">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <div class="card-content">
+                        <h4>Total Salary Paid</h4>
+                        <p>₹90000</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cards-container">
+                <div class="card1">
+                    <i class="fas fa-chart-pie"></i>
+                    <div class="card-content">
+                        <h4>Expenses</h4>
+                        <p>₹4000</p>
+                    </div>
+                </div>
+    
+                <div class="card1">
+                    <i class="fas fa-gas-pump"></i>
+                    <div class="card-content">
+                        <h4>Petrol Expenses</h4>
+                        <p>₹1000</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="cards-container">
+                <div class="card1">
+                    <i class="fas fa-file-invoice"></i>
+                    <div class="card-content">
+                        <h4>Bill Received Till Date</h4>
+                        <p>₹2000</p>
+                    </div>
+                </div>
+    
+                <div class="card1">
+                    <i class="fas fa-clock"></i>
+                    <div class="card-content">
+                        <h4>Installments</h4>
+                    </div>
+                </div>
+    
+                <div class="card1">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <div class="card-content">
+                        <h4>Total Bill Received</h4>
+                        <p>₹20000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="cards-container2">
+            <div class="card1">
+                <i class="fas fa-hand-holding-usd"></i>
+                <div class="card-content">
+                    <h4>Outstanding Amount</h4>
+                    <p>₹3000</p>
+                </div>
+            </div>
+        </div>
+        <br>
+   <!-- Bottom Row -->
+   <div class="bottom-container">
+    <!-- Document Card -->
+    <div class="document-section">
+        <h3 class="document-title">Document</h3>
+        <div class="document-icon">
+            <i class="fas fa-file-alt fa-3x" style="color: #4e54c8;"></i>
+        </div>
+        <div class="document-buttons">
+            <button class="document-btn download-btn">Download</button>
+            <button class="document-btn view-btn">View</button>
+        </div>
+    </div>
+
+        <!-- Performance Metrics Section -->
+        <div class="card performance-section">
+            <div class="performance-header">
+                <h3>Project Located</h3>
+            </div>
+            <div class="map-container">
+                <img src="/assets/images/location map png.jpeg">   
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

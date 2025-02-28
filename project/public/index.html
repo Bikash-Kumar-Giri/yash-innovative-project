@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Innovative Solutions LLP - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="company-name">Yash Innovative Solutions LLP</div>
+        </div>
+        <nav class="sidebar-menu">
+            <a href="/project/public/index.html" class="menu-item active">
+                <i class="fa fa-home"></i>
+                Dashboard
+            </a>
+            <a href="/project/pages/Projects.html" class="menu-item ">
+                <i class="fas fa-project-diagram"></i>
+                Projects
+            </a>
+            <a href="/project/pages/Employee.html" class="menu-item">
+                <i class="fas fa-users"></i>
+                Employees
+            </a>
+            <a href="/project/pages/FinancialDashboard.html" class="menu-item">
+                <i class="fas fa-chart-bar"></i>
+                Financial Report
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-comments"></i>
+                Chat
+            </a>
+            <div class="add-project-container">
+                <div class="add-project-text">
+                    <p>Please organize your projects through button</p>
+                </div>
+                <button class="add-project-btn">
+                    <i class="fas fa-plus"></i>
+                    Add Project
+                </button>
+            </div>
+            
+            <a href="#" class="log-out">
+                Log Out
+                <i class="fas fa-power-off"></i>
+            </a>
+        </nav>
+        <div class="footer">
+            <p>&copy; 2023 All rights reserved.</p>
+            <p>Made By MHTECHIN</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search Here">
+            </div>
+            <div class="header-icons">
+                <div class="icon-badge">
+                    <i class="fas fa-bell blue-icon"></i>
+                </div>
+                <div class="icon-badge">
+                    <i class="fas fa-envelope green-icon"></i>
+                </div>
+                <div class="user-profile">
+                    <div class="greeting">Hello, ADMIN!</div>
+                    <div class="avatar">
+                        <a href="/project/pages/Login Page/index.html">
+                            <img src="/assets/images/admin.png" alt="User Avatar">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Dashboard Welcome -->
+        <div class="dashboard-welcome">
+            <div class="welcome-text">
+                <h1>Dashboard</h1>
+                <p>Hi, ADMIN. Welcome back to Yash Admin!</p>
+            </div>
+            
+            <div class="filter-period">
+                <i class="far fa-calendar"></i>
+                <span>Filter Periode</span>
+                
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        
+        <!-- Stats Cards -->
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-folder"></i>
+                </div>
+                <div class="stat-info">
+                    <h2>75</h2>
+                    <p>Total Projects</p>
+                    <span class="stat-change positive">
+                        <i class="fas fa-arrow-up"></i> +5.2% (prev)
+                    </span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon eff8ff">
+                    <i class="fas fa-check-circle check-circle"></i>
+                </div>
+                <div class="stat-info">
+                    <h2>357</h2>
+                    <p>Total Project Complete</p>
+                    <span class="stat-change positive">
+                        <i class="fas fa-arrow-up"></i> +5.1% (prev)
+                    </span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon expenses">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="stat-info">
+                    <h2>65</h2>
+                    <p>Total Expenses</p>
+                    <span class="stat-change negative">
+                        <i class="fas fa-arrow-down"></i> -3.1% (prev)
+                    </span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon shopping-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="stat-info">
+                    <h2>$128</h2>
+                    <p>Total Revenue</p>
+                    <span class="stat-change positive">
+                        <i class="fas fa-arrow-up"></i> +2.1% (prev)
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Charts Section -->
+        <div class="charts-row">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3 class="chart-title">Pie Chart</h3>
+                    <div class="chart-options">
+                        <label>
+                            <input type="checkbox" checked> Chart
+                        </label>
+                        <label>
+                            <input type="checkbox" checked> Show Value
+                        </label>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                
+                <div class="pie-charts-container">
+                    <div>
+                        <div class="donut-chart projects-donut">
+                            <span class="percentage">81%</span>
+                        </div>
+                        <p class="pie-chart-label">Total Projects</p>
+                    </div>
+                    
+                    <div>
+                        <div class="donut-chart growth-donut">
+                            <span class="percentage">22%</span>
+                        </div>
+                        <p class="pie-chart-label">Client Growth</p>
+                    </div>
+                    
+                    <div>
+                        <div class="donut-chart revenue-donut">
+                            <span class="percentage">62%</span>
+                        </div>
+                        <p class="pie-chart-label">Total Revenue</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3 class="chart-title">Chart Progress</h3>
+                </div>
+                
+                <div class="progress-chart">
+                    <img src="/assets/images/Progressgraph.jpg" alt="Progress Chart">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Revenue Charts Row -->
+        <div class="revenue-charts-row">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3 class="chart-title">Total Revenue</h3>
+                    <div class="chart-options">
+                        <span class="year-2020">● 2020</span>
+                        <span class="year-2021">● 2021</span>
+                    </div>
+                </div>
+                
+                <div class="revenue-chart">
+                    <img src="/assets/images/RevenueChart.png" alt="Revenue Chart">
+                </div>
+            </div>
+            
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3 class="chart-title">Project Map</h3>
+                </div>
+                
+                <div class="project-map">
+                    <img src="/assets/images/map.png" alt="Project Map">
+                </div>
+            </div>
+        </div>     
+    </main>
+
+   <script src="/src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Innovative Solutions LLP - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="company-name">Yash Innovative Solutions LLP</div>
+        </div>
+        <nav class="sidebar-menu">
+            <a href="/project/public/index.html" class="menu-item">
+                <i class="fa fa-home"></i>
+                Dashboard
+            </a>
+            <a href="/project/pages/Projects.html" class="menu-item">
+                <i class="fas fa-project-diagram"></i>
+                Projects
+            </a>
+            <a href="/project/pages/Employee.html" class="menu-item">
+                <i class="fas fa-users"></i>
+                Employees
+            </a>
+            <a href="/project/pages/FinancialDashboard.html" class="menu-item active">
+                <i class="fas fa-chart-bar"></i>
+                Financial Report
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-comments"></i>
+                Chat
+            </a>
+            <div class="add-project-container">
+                <div class="add-project-text">
+                    <p>Please organize your projects through button</p>
+                </div>
+                <button class="add-project-btn">
+                    <i class="fas fa-plus"></i>
+                    Add Project
+                </button>
+            </div>
+            
+            <a href="#" class="log-out">
+                Log Out
+                <i class="fas fa-power-off"></i>
+            </a>
+        </nav>
+        <div class="footer">
+            <p>&copy; 2023 All rights reserved.</p>
+            <p>Made By MHTECHIN</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search Here">
+            </div>
+            <div class="header-icons">
+                <div class="icon-badge">
+                    <i class="fas fa-bell blue-icon"></i>
+                </div>
+                <div class="icon-badge">
+                    <i class="fas fa-envelope green-icon"></i>
+                </div>
+                 
+                <div class="user-profile">
+                    <div class="greeting">Hello, ADMIN!</div>
+                    <div class="avatar">
+                        <a href="/project/pages/Login Page/index.html">
+                            <img src="/assets/images/admin.png" alt="User Avatar">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- Dashboard Welcome -->
+    <div class="dashboard-welcome">
+        <div class="welcome-text">
+            <h1>FINANCIAL REPORT</h1>
+            <p>Hi, ADMIN. Welcome back to Yash Admin!</p>
+        </div>
+        
+        <div class="filter-period">
+            <i class="far fa-calendar"></i>
+            <span>Filter Periode</span>
+            <span>17 April 2023 - 21 May 2023</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+
+        <!-- Stats Cards -->
+        <div class="stats-cards1">
+            <div class="stat-card1">
+                <h2>80%</h2>
+                <p>Lorem ipsum text. Cras blandit at elit id blandit. Morbi felis amet nunc...</p>
+            </div>
+            <div class="stat-card1">
+                <h2>43%</h2>
+                <p>Lorem ipsum text. Cras blandit at elit id blandit. Morbi felis enim sagittis...</p>
+            </div>
+            <div class="stat-card1 double-stat">
+                <div class="top-stat">
+                    <i class="fas fa-chart-pie"></i>
+                    <h2>95%</h2>
+                </div>
+                <div class="bottom-stat">
+                    <i class="fas fa-image"></i>
+                    <h2>78%</h2>
+                </div>
+            </div>
+            <div class="stat-card1">
+                <h2>89%</h2>
+                <p>Lorem ipsum text. Cras blandit at elit id blandit. Morbi felis dui sapien...</p>
+            </div>
+        </div>
+
+        ...
+        <!-- Charts Section -->
+        <div class="charts-section">
+            <div class="chart-container revenue-chart">
+                <div class="chart-header">
+                    <h2>Revenue</h2>
+                </div>
+                
+                <div class="revenue-image">
+                    <img src="/assets/images/TotalRev.png" alt="Revenue Image">
+                </div>
+            </div>
+
+            <div class="chart-container employees-chart">
+                <div class="chart-header">
+                    <h2>Employees</h2>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <!-- Add image to Employees section -->
+                <div class="employees-image">
+                    <img src="/assets/images/Emp.png" alt="Employees Image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Net Profit Chart -->
+        <div class="net-profit-container">
+            <div class="chart-header">
+                <h2>Net Profit</h2>
+            </div>
+            <div class="net-profit-image">
+                <img src="/assets/images/NetProfit.png" alt="Net Profit Image">
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+   <script src="/src/script.js"></script>
+</body>
+</html>

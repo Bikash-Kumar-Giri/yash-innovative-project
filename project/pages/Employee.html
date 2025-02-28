@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Innovative Solutions LLP - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="company-name">Yash Innovative Solutions LLP</div>
+        </div>
+        <nav class="sidebar-menu">
+            <a href="/project/public/index.html" class="menu-item">
+                <i class="fa fa-home"></i>
+                Dashboard
+            </a>
+            <a href="/project/pages/Projects.html" class="menu-item">
+                <i class="fas fa-project-diagram"></i>
+                Projects
+            </a>
+            <a href="/project/pages/Employee.html" class="menu-item active">
+                <i class="fas fa-users"></i>
+                Employees
+            </a>
+            <a href="/project/pages/FinancialDashboard.html" class="menu-item">
+                <i class="fas fa-chart-bar"></i>
+                Financial Report
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-comments"></i>
+                Chat
+            </a>
+            <div class="add-project-container">
+                <div class="add-project-text">
+                    <p>Please organize your projects through button</p>
+                </div>
+                <button class="add-project-btn">
+                    <i class="fas fa-plus"></i>
+                    Add Project
+                </button>
+            </div>
+            
+            <a href="#" class="log-out">
+                Log Out
+                <i class="fas fa-power-off"></i>
+            </a>
+        </nav>
+        <div class="footer">
+            <p>&copy; 2023 All rights reserved.</p>
+            <p>Made By MHTECHIN</p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search Here">
+            </div>
+            <div class="header-icons">
+                <div class="icon-badge">
+                    <i class="fas fa-bell blue-icon"></i>
+                </div>
+                <div class="icon-badge">
+                    <i class="fas fa-envelope green-icon"></i>
+                </div>
+                 
+                <div class="user-profile">
+                    <div class="greeting">Hello, ADMIN!</div>
+                    <div class="avatar">
+                        <a href="/project/pages/Login Page/index.html">
+                            <img src="/assets/images/admin.png" alt="User Avatar">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- Dashboard Welcome -->
+    <div class="dashboard-welcome">
+        <div class="welcome-text">
+            <h1>EMPLOYEE</h1>
+            <p>Hi, ADMIN. Welcome back to Yash Admin!</p>
+        </div>
+    </div>
+    <!--Employees-->
+    <div class="employees-card">
+        <div class="card-header">
+            <div></div>
+            <button class="add-employee-btn">
+                <i class="fas fa-plus"></i>
+                <span>NEW EMPLOYEE</span>
+            </button>
+        </div>
+        <table class="employees-table">
+            <thead>
+                <tr>
+                    <th class="table-header-1">#</th>
+                    <th class="table-header-2">Employee Name</th>
+                    <th class="table-header-3">Position</th>
+                    <th class="table-header-4">Date Of Joining</th>
+                    <th class="table-header-5">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="window.location.href='EmployeeDetails.html'" class="clickable-row">
+                    <td>1</td>
+                    <td><a href="EmployeeDetails.html"></a>Alyssa Kelley</td>
+                    <td>Employee Post</td>
+                    <td>Date Of Joining</td>
+                    <td>
+                        <div class="action-icons">
+                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onclick="window.location.href='EmployeeDetails.html'" class="clickable-row">
+                    <td>2</td>
+                    <td><a href="EmployeeDetails.html"></a>Jorden Nixon</td>
+                    <td>Employee Post</td>
+                    <td>Date Of Joining</td>
+                    <td>
+                        <div class="action-icons">
+                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onclick="window.location.href='EmployeeDetails.html'" class="clickable-row">
+                    <td>3</td>
+                    <td><a href="EmployeeDetails.html"></a>Ace Folley</td>
+                    <td>Employee Post</td>
+                    <td>Date Of Joining</td>
+                    <td>
+                        <div class="action-icons">
+                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onclick="window.location.href='EmployeeDetails.html'" class="clickable-row">
+                    <td>4</td>
+                    <td><a href="EmployeeDetails.html"></a>Nikolae Schimidt</td>
+                    <td>Employee Post</td>
+                    <td>Date Of Joining</td>
+                    <td>
+                        <div class="action-icons">
+                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onclick="window.location.href='EmployeeDetails.html'" class="clickable-row">
+                    <td>5</td>
+                    <td><a href="EmployeeDetails.html"></a>Clayton Charles</td>
+                    <td>Employee Post</td>
+                    <td>Date Of Joining</td>
+                    <td>
+                        <div class="action-icons">
+                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onclick="window.location.href='EmployeeDetails.html'" class="clickable-row">
+                    <td>6</td>
+                    <td><a href="EmployeeDetails.html"></a>Prince Chan</td>
+                    <td>Employee Post</td>
+                    <td>Date Of Joining</td>
+                    <td>
+                        <div class="action-icons">
+                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onclick="window.location.href='EmployeeDetails.html'" class="clickable-row">
+                    <td>7</td>
+                    <td><a href="EmployeeDetails.html"></a>Reece Duran</td>
+                    <td>Employee Post</td>
+                    <td>Date Of Joining</td>
+                    <td>
+                        <div class="action-icons">
+                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onclick="window.location.href='EmployeeDetails.html'" class="clickable-row">
+                    <td>8</td>
+                    <td><a href="EmployeeDetails.html"></a>Anastasia McDaniel</td>
+                    <td>Employee Post</td>
+                    <td>Date Of Joining</td>
+                    <td>
+                        <div class="action-icons">
+                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr onclick="window.location.href='EmployeeDetails.html'" class="clickable-row">
+                    <td>9</td>
+                    <td><a href="EmployeeDetails.html"></a>Melvin Boyle</td>
+                    <td>Employee Post</td>
+                    <td>Date Of Joining</td>
+                    <td>
+                        <div class="action-icons">
+                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <div class="page-item"><i class="fas fa-chevron-left"></i></div>
+            <div class="page-item active">1</div>
+            <div class="page-item">2</div>
+            <div class="page-item">3</div>
+            <div class="page-item">4</div>
+            <div class="page-item">5</div>
+            <div class="page-item">10</div>
+            <div class="page-item">...</div>
+            <div class="page-item">/Page</div>
+        </div>
+    </div>
+    
+    <div class="bottom-cards">
+        <div class="employee-details-card">
+            <h2 class="card-title">Employee Name</h2>
+            <div class="employee-details-container">
+                <div class="employee-details-badge">2</div>
+                <div class="detail-item">
+                    <div class="detail-label">Project Name</div>
+                    <div class="detail-value">Yash Admin</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Working project</div>
+                    <div class="detail-value">Yash Admin</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Post</div>
+                    <div class="detail-value">Designer</div>
+                </div>
+            </div>
+        </div>
+        <div class="pie-chart-card">
+            <div class="chart-header">
+                <h2 class="card-title">Pie Chart</h2>
+                <div class="chart-options">
+                    <div class="chart-option">
+                        <input type="radio" id="chart-radio" name="chart-option" checked>
+                        <label for="chart-radio">Chart</label>
+                    </div>
+                    <div class="chart-option">
+                        <input type="radio" id="value-radio" name="chart-option">
+                        <label for="value-radio">Show Value</label>
+                    </div>
+                    <div class="chart-more">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-content">
+                <div class="chart-item">
+                    <div class="chart-number">24</div>
+                    <div class="chart-label">Completed</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-number">1</div>
+                    <div class="chart-label">Assigned</div>
+                </div>
+                <div class="chart-item">
+                    <div class="chart-number">13</div>
+                    <div class="chart-label">Up coming</div>
+                </div>
+            </div>
+            <div class="chart-footer">
+                <div class="chart-footer-item">
+                    <div class="footer-item-label">Total Project Complete</div>
+                </div>
+                <div class="chart-footer-item">
+                    <div class="footer-item-label">Ongoing Project Progress</div>
+                </div>
+                <div class="chart-footer-item">
+                    <div class="footer-item-label">Total Projects To Do</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</main>
+
+   <script src="/src/script.js"></script>
+</body>
+</html>
