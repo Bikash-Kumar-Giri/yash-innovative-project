@@ -35,19 +35,11 @@
                 <i class="fas fa-chart-bar"></i>
                 Financial Report
             </a>
-            <a href="#" class="menu-item">
-                <i class="fas fa-comments"></i>
-                Chat
-            </a>
-            <div class="add-project-container">
-                <div class="add-project-text">
-                    <p>Please organize your projects through button</p>
-                </div>
-                <button class="add-project-btn">
-                    <i class="fas fa-plus"></i>
-                    Add Project
-                </button>
-            </div>
+               <a href="#" class="menu-item chat-button">
+        <i class="fas fa-comments"></i>
+        Chat
+    </a>
+              
             
             <a href="#" class="log-out">
                 Log Out
@@ -60,14 +52,36 @@
         </div>
     </aside>
 
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-modal-content">
+            <div class="chat-modal-header">
+                <h2>Chat</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="chat-modal-body">
+                <select>
+                    <option value="">Chat with</option>
+                    <option value="user1"> HR</option>
+                    <option value="user2">Account</option>
+                     
+                </select>
+                <textarea placeholder="Type your message here..." rows="4"></textarea>
+                <div class="document-upload">
+                    <i class="fas fa-plus"></i>
+                    <label for="file-upload">Share Document</label>
+                    <input type="file" id="file-upload" style="display: none;">
+                </div>
+            </div>
+            <div class="chat-modal-footer">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main class="main-content">
         <!-- Header -->
-        <header class="header">
-            <div class="search-bar">
-                <i class="fas fa-search search-icon"></i>
-                <input type="text" placeholder="Search Here">
-            </div>
+        <header class="header2">
             <div class="header-icons">
                 <div class="icon-badge">
                     <i class="fas fa-bell blue-icon"></i>
@@ -90,14 +104,21 @@
     <div class="dashboard-welcome">
         <div class="welcome-text">
             <h1>FINANCIAL REPORT</h1>
-            <p>Hi, ADMIN. Welcome back to Yash Admin!</p>
+                
         </div>
         
         <div class="filter-period">
             <i class="far fa-calendar"></i>
-            <span>Filter Periode</span>
-            <span>17 April 2023 - 21 May 2023</span>
+            <span>Filter Period</span>
             <i class="fas fa-chevron-down"></i>
+            
+            <!-- Hidden Date Picker Container -->
+            <div class="date-picker-container">
+                <label>From:</label>
+                <input type="date" id="from-date">
+                <label>To:</label>
+                <input type="date" id="to-date">
+            </div>
         </div>
     </div>
 
@@ -127,7 +148,7 @@
             </div>
         </div>
 
-        ...
+        
         <!-- Charts Section -->
         <div class="charts-section">
             <div class="chart-container revenue-chart">
@@ -142,8 +163,8 @@
 
             <div class="chart-container employees-chart">
                 <div class="chart-header">
-                    <h2>Employees</h2>
-                    <i class="fas fa-ellipsis-h"></i>
+                    <h2>Graph</h2>
+                    <!-- <i class="fas fa-ellipsis-h"></i> -->
                 </div>
                 <!-- Add image to Employees section -->
                 <div class="employees-image">

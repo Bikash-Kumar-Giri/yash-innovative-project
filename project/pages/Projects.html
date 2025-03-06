@@ -35,19 +35,11 @@
                 <i class="fas fa-chart-bar"></i>
                 Financial Report
             </a>
-            <a href="#" class="menu-item">
-                <i class="fas fa-comments"></i>
-                Chat
-            </a>
-            <div class="add-project-container">
-                <div class="add-project-text">
-                    <p>Please organize your projects through button</p>
-                </div>
-                <button class="add-project-btn">
-                    <i class="fas fa-plus"></i>
-                    Add Project
-                </button>
-            </div>
+               <a href="#" class="menu-item chat-button">
+        <i class="fas fa-comments"></i>
+        Chat
+    </a>
+              
             
             <a href="#" class="log-out">
                 Log Out
@@ -59,6 +51,32 @@
             <p>Made By MHTECHIN</p>
         </div>
     </aside>
+
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-modal-content">
+            <div class="chat-modal-header">
+                <h2>Chat</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="chat-modal-body">
+                <select>
+                    <option value="">Chat with</option>
+                    <option value="user1"> HR</option>
+                    <option value="user2">Account</option>
+                     
+                </select>
+                <textarea placeholder="Type your message here..." rows="4"></textarea>
+                <div class="document-upload">
+                    <i class="fas fa-plus"></i>
+                    <label for="file-upload">Share Document</label>
+                    <input type="file" id="file-upload" style="display: none;">
+                </div>
+            </div>
+            <div class="chat-modal-footer">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -90,13 +108,10 @@
     <div class="dashboard-welcome">
         <div class="welcome-text">
             <h1>PROJECT</h1>
-            <p>Hi, ADMIN. Welcome back to Yash Admin!</p>
+                
         </div>
     </div>
     <div class="projects-table">
-        <div class="table-header">
-            <button class="new-project-btn">+ NEW PROJECT</button>
-        </div>
         <table>
             <thead>
                 <tr>
@@ -105,6 +120,7 @@
                     <th>Started On</th>
                     <th>Targeted date</th>
                     <th>Progress</th>
+                    <th>Actions</th>
                     <th></th>
                 </tr>
             </thead>
@@ -115,26 +131,12 @@
                     <td>13-02-2025</td>
                     <td>15-03-2025</td>
                     <td><span class="status completed">Completed</span></td>
-                    <td class="actions">
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="3 6 5 6 21 6"></polyline>
-                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                            </svg>
-                        </button>
+                    <td>
+                        <div class="action-icons">
+                             
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
                     </td>
                 </tr>
                 <tr onclick="window.location.href='ProjectDetails.html'" class="clickable-row">
@@ -143,26 +145,12 @@
                     <td>13-02-2025</td>
                     <td>15-03-2025</td>
                     <td><span class="status in-progress">Work in Progress</span></td>
-                    <td class="actions">
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="3 6 5 6 21 6"></polyline>
-                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                            </svg>
-                        </button>
+                    <td>
+                        <div class="action-icons">
+                             
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
                     </td>
                 </tr>
                 <tr onclick="window.location.href='ProjectDetails.html'" class="clickable-row">
@@ -171,26 +159,12 @@
                     <td>13-02-2025</td>
                     <td>15-03-2025</td>
                     <td><span class="status completed">Completed</span></td>
-                    <td class="actions">
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="3 6 5 6 21 6"></polyline>
-                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                            </svg>
-                        </button>
+                    <td>
+                        <div class="action-icons">
+                             
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
                     </td>
                 </tr>
                 <tr onclick="window.location.href='ProjectDetails.html'" class="clickable-row">
@@ -199,26 +173,12 @@
                     <td>13-02-2025</td>
                     <td>15-03-2025</td>
                     <td><span class="status completed">Completed</span></td>
-                    <td class="actions">
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="3 6 5 6 21 6"></polyline>
-                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                            </svg>
-                        </button>
+                    <td>
+                        <div class="action-icons">
+                             
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
                     </td>
                 </tr>
                 <tr onclick="window.location.href='ProjectDetails.html'" class="clickable-row">
@@ -227,26 +187,12 @@
                     <td>13-02-2025</td>
                     <td>15-03-2025</td>
                     <td><span class="status in-progress">Work in Progress</span></td>
-                    <td class="actions">
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="3 6 5 6 21 6"></polyline>
-                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                            </svg>
-                        </button>
+                    <td>
+                        <div class="action-icons">
+                             
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
                     </td>
                 </tr>
                 <tr onclick="window.location.href='ProjectDetails.html'" class="clickable-row">
@@ -255,26 +201,12 @@
                     <td>13-02-2025</td>
                     <td>15-03-2025</td>
                     <td><span class="status completed">Completed</span></td>
-                    <td class="actions">
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="3 6 5 6 21 6"></polyline>
-                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                            </svg>
-                        </button>
+                    <td>
+                        <div class="action-icons">
+                             
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
                     </td>
                 </tr>
                 <tr onclick="window.location.href='ProjectDetails.html'" class="clickable-row">
@@ -283,26 +215,12 @@
                     <td>13-02-2025</td>
                     <td>15-03-2025</td>
                     <td><span class="status completed">Completed</span></td>
-                    <td class="actions">
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="3 6 5 6 21 6"></polyline>
-                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                            </svg>
-                        </button>
+                    <td>
+                        <div class="action-icons">
+                             
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
                     </td>
                 </tr>
                 <tr onclick="window.location.href='ProjectDetails.html'" class="clickable-row">
@@ -311,26 +229,12 @@
                     <td>13-02-2025</td>
                     <td>15-03-2025</td>
                     <td><span class="status completed">Completed</span></td>
-                    <td class="actions">
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="3 6 5 6 21 6"></polyline>
-                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                            </svg>
-                        </button>
+                    <td>
+                        <div class="action-icons">
+                             
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
                     </td>
                 </tr>
                 <tr onclick="window.location.href='ProjectDetails.html'" class="clickable-row">
@@ -339,64 +243,29 @@
                     <td>13-02-2025</td>
                     <td>15-03-2025</td>
                     <td><span class="status completed">Completed</span></td>
-                    <td class="actions">
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                            </svg>
-                        </button>
-                        <button class="action-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="3 6 5 6 21 6"></polyline>
-                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                            </svg>
-                        </button>
+                    <td>
+                        <div class="action-icons">
+                             
+                            <div class="action-icon"><i class="fas fa-edit"></i></div>
+                            <div class="action-icon"><i class="fas fa-trash"></i></div>
+                        </div>
                     </td>
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="pagination">
-        <button class="prev">←</button>
-        <button class="page-number active">1</button>
-        <button class="page-number">2</button>
-        <button class="page-number">3</button>
-        <button class="page-number">4</button>
-        <button class="next">→</button>
-        <div class="per-page">
-            <input type="text" value="10">
-            <span>/Page</span>
-        </div>
-    </div>
-
-    <div class="bottom-panels">
-        <div class="project-details-panel">
-            <h3>Project Name</h3>
-            <div class="project-form">
-                <input type="text" placeholder="Project Name">
-                <input type="text" placeholder="Employees Working">
-                <input type="text" placeholder="Profit/Loss">
-                <!-- <div class="expand-icon"></div> -->
-            
-            </div>
-        </div>
-        <div class="project-location-panel">
-            <h3>Project Located</h3>
-            
-            <div class="map-container">
-                <img src="/assets/images/location map png.jpeg">
-                
-            </div>
+        <div class="pagination">
+            <div class="page-item"><i class="fas fa-chevron-left"></i></div>
+            <div class="page-item active">1</div>
+            <div class="page-item">2</div>
+            <div class="page-item">3</div>
+            <div class="page-item">4</div>
+            <div class="page-item">5</div>
+            <div class="page-item">10</div>
+            <div class="page-item">...</div>
+            <div class="page-item">/Page</div>
         </div>
     </div>
 </main>
+<script src="/src/script.js"></script>
 </body>
 </html>

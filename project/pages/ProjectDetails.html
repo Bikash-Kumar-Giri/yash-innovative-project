@@ -35,19 +35,10 @@
                 <i class="fas fa-chart-bar"></i>
                 Financial Report
             </a>
-            <a href="#" class="menu-item">
-                <i class="fas fa-comments"></i>
-                Chat
-            </a>
-            <div class="add-project-container">
-                <div class="add-project-text">
-                    <p>Please organize your projects through button</p>
-                </div>
-                <button class="add-project-btn">
-                    <i class="fas fa-plus"></i>
-                    Add Project
-                </button>
-            </div>
+               <a href="#" class="menu-item chat-button">
+        <i class="fas fa-comments"></i>
+        Chat
+    </a>
             
             <a href="#" class="log-out">
                 Log Out
@@ -60,14 +51,36 @@
         </div>
     </aside>
 
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-modal-content">
+            <div class="chat-modal-header">
+                <h2>Chat</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="chat-modal-body">
+                <select>
+                    <option value="">Chat with</option>
+                    <option value="user1"> HR</option>
+                    <option value="user2">Account</option>
+                     
+                </select>
+                <textarea placeholder="Type your message here..." rows="4"></textarea>
+                <div class="document-upload">
+                    <i class="fas fa-plus"></i>
+                    <label for="file-upload">Share Document</label>
+                    <input type="file" id="file-upload" style="display: none;">
+                </div>
+            </div>
+            <div class="chat-modal-footer">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main class="main-content">
         <!-- Header -->
-        <header class="header">
-            <div class="search-bar">
-                <i class="fas fa-search search-icon"></i>
-                <input type="text" placeholder="Search Here">
-            </div>
+        <header class="header2">
             <div class="header-icons">
                 <div class="icon-badge">
                     <i class="fas fa-bell blue-icon"></i>
@@ -90,7 +103,7 @@
     <div class="dashboard-welcome">
         <div class="welcome-text">
             <h1>PROJECT DETAILS</h1>
-            <p>Hi, ADMIN. Welcome back to Yash Admin!</p>
+                
         </div>
     </div>
     <!-- Projects Cards -->
@@ -109,10 +122,9 @@
         <div class="project-details-list">
             <div class="detail-item">
                 <span>Project Name</span>
-                <i class="fas fa-sort"></i>
             </div>
             <div class="detail-item">
-                <span>Project Assign</span>
+                <span>Employees</span>
             </div>
             <div class="detail-item">
                 <span>Progress</span>
@@ -151,10 +163,10 @@
         <div class="project-details-list">
             <div class="detail-item">
                 <span>Project Name</span>
-                <i class="fas fa-sort"></i>
+                
             </div>
             <div class="detail-item">
-                <span>Project Assign</span>
+                <span>Employees</span>
             </div>
             <div class="detail-item">
                 <span>Progress</span>
@@ -193,10 +205,10 @@
         <div class="project-details-list">
             <div class="detail-item">
                 <span>Project Name</span>
-                <i class="fas fa-sort"></i>
+                
             </div>
             <div class="detail-item">
-                <span>Project Assign</span>
+                <span>Employees</span>
             </div>
             <div class="detail-item">
                 <span>Progress</span>
@@ -223,19 +235,6 @@
     </a>
 </div>
     <!-- Bottom Row -->
-    <div class="bottom-row">
-        <div class="document-section">
-            <h3 class="document-title">Document</h3>
-            <div class="document-icon">
-                <i class="fas fa-file-alt fa-3x" style="color: #4e54c8;"></i>
-            </div>
-            <div class="document-buttons">
-                <button class="document-btn download-btn">Download</button>
-                <button class="document-btn view-btn">View</button>
-            </div>
-        </div>
-
-        <!-- Combined Detail Card -->
         <div class="combined-detail-card">
             <h3>Combined Detail</h3>
             <div class="combined-details">
@@ -249,8 +248,7 @@
                     <span>Total Profit/Loss</span>
                 </div>
             </div>
-        </div>
-    </div>   
+        </div> 
     </main>
 
    <script src="/src/script.js"></script>

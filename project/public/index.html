@@ -35,19 +35,10 @@
                 <i class="fas fa-chart-bar"></i>
                 Financial Report
             </a>
-            <a href="#" class="menu-item">
-                <i class="fas fa-comments"></i>
-                Chat
-            </a>
-            <div class="add-project-container">
-                <div class="add-project-text">
-                    <p>Please organize your projects through button</p>
-                </div>
-                <button class="add-project-btn">
-                    <i class="fas fa-plus"></i>
-                    Add Project
-                </button>
-            </div>
+               <a href="#" class="menu-item chat-button">
+        <i class="fas fa-comments"></i>
+        Chat
+    </a>
             
             <a href="#" class="log-out">
                 Log Out
@@ -60,14 +51,35 @@
         </div>
     </aside>
 
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-modal-content">
+            <div class="chat-modal-header">
+                <h2>Chat</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="chat-modal-body">
+                <select>
+                    <option value="">Chat with</option>
+                    <option value="user1"> HR</option>
+                    <option value="user2">Account</option>
+                </select>
+                <textarea placeholder="Type your message here..." rows="4"></textarea>
+                <div class="document-upload">
+                    <i class="fas fa-plus"></i>
+                    <label for="file-upload">Share Document</label>
+                    <input type="file" id="file-upload" style="display: none;">
+                </div>
+            </div>
+            <div class="chat-modal-footer">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <main class="main-content">
         <!-- Header -->
-        <header class="header">
-            <div class="search-bar">
-                <i class="fas fa-search search-icon"></i>
-                <input type="text" placeholder="Search Here">
-            </div>
+        <header class="header2">
             <div class="header-icons">
                 <div class="icon-badge">
                     <i class="fas fa-bell blue-icon"></i>
@@ -92,13 +104,6 @@
                 <h1>Dashboard</h1>
                 <p>Hi, ADMIN. Welcome back to Yash Admin!</p>
             </div>
-            
-            <div class="filter-period">
-                <i class="far fa-calendar"></i>
-                <span>Filter Periode</span>
-                
-                <i class="fas fa-chevron-down"></i>
-            </div>
         </div>
         
         <!-- Stats Cards -->
@@ -110,9 +115,6 @@
                 <div class="stat-info">
                     <h2>75</h2>
                     <p>Total Projects</p>
-                    <span class="stat-change positive">
-                        <i class="fas fa-arrow-up"></i> +5.2% (prev)
-                    </span>
                 </div>
             </div>
             
@@ -123,9 +125,42 @@
                 <div class="stat-info">
                     <h2>357</h2>
                     <p>Total Project Complete</p>
-                    <span class="stat-change positive">
-                        <i class="fas fa-arrow-up"></i> +5.1% (prev)
-                    </span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon eff8ff">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="stat-info">
+                    <h2>65</h2>
+                    <p>On-going Project</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-info">
+                    <h2>190</h2>
+                    <p>Total Employees</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon expenses">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <!-- <div class="stat-icon eff8ff">
+                    <i class="fas fa-check-circle check-circle"></i>
+                </div> -->
+                <div class="stat-info">
+                    <h2>$357K</h2>
+                    <p>Total Expenses</p>
                 </div>
             </div>
             
@@ -134,30 +169,14 @@
                     <i class="fas fa-dollar-sign"></i>
                 </div>
                 <div class="stat-info">
-                    <h2>65</h2>
-                    <p>Total Expenses</p>
-                    <span class="stat-change negative">
-                        <i class="fas fa-arrow-down"></i> -3.1% (prev)
-                    </span>
-                </div>
-            </div>
-            
-            <div class="stat-card">
-                <div class="stat-icon shopping-cart">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <div class="stat-info">
-                    <h2>$128</h2>
+                    <h2>$65M</h2>
                     <p>Total Revenue</p>
-                    <span class="stat-change positive">
-                        <i class="fas fa-arrow-up"></i> +2.1% (prev)
-                    </span>
                 </div>
             </div>
         </div>
         
         <!-- Charts Section -->
-        <div class="charts-row">
+        <!-- <div class="charts-row">
             <div class="chart-card">
                 <div class="chart-header">
                     <h3 class="chart-title">Pie Chart</h3>
@@ -206,7 +225,7 @@
                 </div>
             </div>
         </div>
-        
+         -->
         <!-- Revenue Charts Row -->
         <div class="revenue-charts-row">
             <div class="chart-card">

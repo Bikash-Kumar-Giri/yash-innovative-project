@@ -35,19 +35,10 @@
                 <i class="fas fa-chart-bar"></i>
                 Financial Report
             </a>
-            <a href="#" class="menu-item">
+            <a href="#" class="menu-item chat-button">
                 <i class="fas fa-comments"></i>
                 Chat
             </a>
-            <div class="add-project-container">
-                <div class="add-project-text">
-                    <p>Please organize your projects through button</p>
-                </div>
-                <button class="add-project-btn">
-                    <i class="fas fa-plus"></i>
-                    Add Project
-                </button>
-            </div>
             
             <a href="#" class="log-out">
                 Log Out
@@ -59,6 +50,32 @@
             <p>Made By MHTECHIN</p>
         </div>
     </aside>
+
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-modal-content">
+            <div class="chat-modal-header">
+                <h2>Chat</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="chat-modal-body">
+                <select>
+                    <option value="">Chat with</option>
+                    <option value="user1"> HR</option>
+                    <option value="user2">Account</option>
+                     
+                </select>
+                <textarea placeholder="Type your message here..." rows="4"></textarea>
+                <div class="document-upload">
+                    <i class="fas fa-plus"></i>
+                    <label for="file-upload">Share Document</label>
+                    <input type="file" id="file-upload" style="display: none;">
+                </div>
+            </div>
+            <div class="chat-modal-footer">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -90,23 +107,22 @@
     <div class="dashboard-welcome">
         <div class="welcome-text">
             <h1>EMPLOYEE</h1>
-            <p>Hi, ADMIN. Welcome back to Yash Admin!</p>
         </div>
     </div>
     <!--Employees-->
     <div class="employees-card">
-        <div class="card-header">
+        <!-- <div class="card-header">
             <div></div>
             <button class="add-employee-btn">
                 <i class="fas fa-plus"></i>
                 <span>NEW EMPLOYEE</span>
             </button>
-        </div>
+        </div> -->
         <table class="employees-table">
             <thead>
                 <tr>
                     <th class="table-header-1">#</th>
-                    <th class="table-header-2">Employee Name</th>
+                    <th class="table-header-2">Employee List ▼</th>
                     <th class="table-header-3">Position</th>
                     <th class="table-header-4">Date Of Joining</th>
                     <th class="table-header-5">Actions</th>
@@ -120,7 +136,6 @@
                     <td>Date Of Joining</td>
                     <td>
                         <div class="action-icons">
-                            <div class="action-icon"><i class="fas fa-eye"></i></div>
                             <div class="action-icon"><i class="fas fa-edit"></i></div>
                             <div class="action-icon"><i class="fas fa-trash"></i></div>
                         </div>
@@ -133,7 +148,7 @@
                     <td>Date Of Joining</td>
                     <td>
                         <div class="action-icons">
-                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                              
                             <div class="action-icon"><i class="fas fa-edit"></i></div>
                             <div class="action-icon"><i class="fas fa-trash"></i></div>
                         </div>
@@ -146,7 +161,7 @@
                     <td>Date Of Joining</td>
                     <td>
                         <div class="action-icons">
-                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                              
                             <div class="action-icon"><i class="fas fa-edit"></i></div>
                             <div class="action-icon"><i class="fas fa-trash"></i></div>
                         </div>
@@ -159,7 +174,7 @@
                     <td>Date Of Joining</td>
                     <td>
                         <div class="action-icons">
-                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                              
                             <div class="action-icon"><i class="fas fa-edit"></i></div>
                             <div class="action-icon"><i class="fas fa-trash"></i></div>
                         </div>
@@ -172,7 +187,7 @@
                     <td>Date Of Joining</td>
                     <td>
                         <div class="action-icons">
-                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                              
                             <div class="action-icon"><i class="fas fa-edit"></i></div>
                             <div class="action-icon"><i class="fas fa-trash"></i></div>
                         </div>
@@ -185,7 +200,7 @@
                     <td>Date Of Joining</td>
                     <td>
                         <div class="action-icons">
-                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                              
                             <div class="action-icon"><i class="fas fa-edit"></i></div>
                             <div class="action-icon"><i class="fas fa-trash"></i></div>
                         </div>
@@ -198,7 +213,7 @@
                     <td>Date Of Joining</td>
                     <td>
                         <div class="action-icons">
-                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                              
                             <div class="action-icon"><i class="fas fa-edit"></i></div>
                             <div class="action-icon"><i class="fas fa-trash"></i></div>
                         </div>
@@ -211,7 +226,7 @@
                     <td>Date Of Joining</td>
                     <td>
                         <div class="action-icons">
-                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                              
                             <div class="action-icon"><i class="fas fa-edit"></i></div>
                             <div class="action-icon"><i class="fas fa-trash"></i></div>
                         </div>
@@ -224,7 +239,7 @@
                     <td>Date Of Joining</td>
                     <td>
                         <div class="action-icons">
-                            <div class="action-icon"><i class="fas fa-eye"></i></div>
+                              
                             <div class="action-icon"><i class="fas fa-edit"></i></div>
                             <div class="action-icon"><i class="fas fa-trash"></i></div>
                         </div>
@@ -244,75 +259,9 @@
             <div class="page-item">/Page</div>
         </div>
     </div>
-    
-    <div class="bottom-cards">
-        <div class="employee-details-card">
-            <h2 class="card-title">Employee Name</h2>
-            <div class="employee-details-container">
-                <div class="employee-details-badge">2</div>
-                <div class="detail-item">
-                    <div class="detail-label">Project Name</div>
-                    <div class="detail-value">Yash Admin</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">Working project</div>
-                    <div class="detail-value">Yash Admin</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">Post</div>
-                    <div class="detail-value">Designer</div>
-                </div>
-            </div>
-        </div>
-        <div class="pie-chart-card">
-            <div class="chart-header">
-                <h2 class="card-title">Pie Chart</h2>
-                <div class="chart-options">
-                    <div class="chart-option">
-                        <input type="radio" id="chart-radio" name="chart-option" checked>
-                        <label for="chart-radio">Chart</label>
-                    </div>
-                    <div class="chart-option">
-                        <input type="radio" id="value-radio" name="chart-option">
-                        <label for="value-radio">Show Value</label>
-                    </div>
-                    <div class="chart-more">
-                        <i class="fas fa-ellipsis-v"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="chart-content">
-                <div class="chart-item">
-                    <div class="chart-number">24</div>
-                    <div class="chart-label">Completed</div>
-                </div>
-                <div class="chart-item">
-                    <div class="chart-number">1</div>
-                    <div class="chart-label">Assigned</div>
-                </div>
-                <div class="chart-item">
-                    <div class="chart-number">13</div>
-                    <div class="chart-label">Up coming</div>
-                </div>
-            </div>
-            <div class="chart-footer">
-                <div class="chart-footer-item">
-                    <div class="footer-item-label">Total Project Complete</div>
-                </div>
-                <div class="chart-footer-item">
-                    <div class="footer-item-label">Ongoing Project Progress</div>
-                </div>
-                <div class="chart-footer-item">
-                    <div class="footer-item-label">Total Projects To Do</div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
-
 </main>
-
    <script src="/src/script.js"></script>
 </body>
 </html>
